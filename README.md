@@ -1,5 +1,5 @@
 # Any-Command-2-Threads
-Java library for run any process in parallel. Multiplataform (Only tested on OSX, Windows & Linux)
+Java library for run any process in parallel (JDK8). Multiplataform (Only tested on OSX, Windows 10 & Linux 2.12, 4.12 Kernel)
 ## Synopsis
 Java Library for run any JAR executable or command without know Java Threads and without modify your exiting projects
 Easiest way to run commands in parallell.
@@ -13,6 +13,9 @@ Easiest way to run commands in parallell.
  runHilos r = new runHilos(arguments, "java -jar "+JAR, Runtime.getRuntime().availableProcessors());
  r.ejecuta();//run command java -jar JAR with the list of arguments
 ```
+## Important Things
+·Never use literal symbols for directories example \" \' delete space names instead
+·Never use path with spaces on the name
 
 ## Motivation
 
@@ -24,7 +27,7 @@ I like process optimization but I don't have time for parallelize all my project
 You can clone this repository and compile the sources using any Java IDE or compile from command line with:
 javac -d bin -sourcepath src -cp src/com/example/Application.java
 
-##Installation
+## Installation
 
 You only need to download the release file: 00001_Threads_LIB.jar and then add generated jar file to your Java project.
 
