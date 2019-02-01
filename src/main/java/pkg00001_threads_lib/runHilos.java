@@ -136,7 +136,7 @@ public class runHilos
                     System.err.println("cancel non-finished tasks");
                 }
                 executor.shutdownNow();
-                System.out.println("shutdown finished");
+            //    System.out.println("shutdown finished");
             }
             salidas = new ArrayList();
             for (int i = 0; i < r.length; i++) {

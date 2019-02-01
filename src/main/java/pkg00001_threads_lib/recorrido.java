@@ -39,7 +39,7 @@ public class recorrido  implements Runnable{
         {
             if(files[i]!=null&!"".equals(files[i]))
             {
-                System.out.println(files[i]+" -hilo: "+NoThread);
+               // System.out.println(files[i]+" -hilo: "+NoThread);
                 this.output = thread.RUN(files[i], files[i], files[i]);
                 this.setOutput(thread.getOutThread()+" thread: "+this.NoThread);
             }

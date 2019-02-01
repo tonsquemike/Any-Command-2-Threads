@@ -86,13 +86,13 @@ public class SimpleThreads {
             p = Runtime.getRuntime().exec(comand);
         } catch (IOException ex) {
             //Logger.getLogger(SimpleThreads.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("error1");
+            System.out.println("error1"+ex.getMessage());
         }
         try {
             p.waitFor();
         } catch (InterruptedException ex) {
            // Logger.getLogger(SimpleThreads.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("error2");
+            System.out.println("error2 "+ex.getMessage());
         }
  
         BufferedReader reader = 
@@ -167,7 +167,7 @@ public class SimpleThreads {
         //System.out.println("-----------------NIXSCRIPT");
         Process p = null;
         try {
-            System.out.println("Llamada");
+           // System.out.println("Llamada");
             
             
             p = Runtime.getRuntime().exec(comand);
@@ -192,7 +192,7 @@ public class SimpleThreads {
         ArrayList<String> allOut = new ArrayList<>();
         try
         {
-            System.out.println("SALIDA-----------:");
+        //    System.out.println("SALIDA-----------:");
             while ((line = reader.readLine())!= null)
             {
                 System.out.println(line);
